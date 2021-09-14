@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- heading -->
+<h2><span>SPLI</span><span>TTER</span></h2>
+
+<!-- Main container -->
+<div class="container">
+
+  <!-- Inputs Section -->
+  <div class="bill-form">
+<form>
+  <!-- Bill Input -->
+  <label for="bill">Bill</label>
+  <div class="input">
+    <img src="images/icon-dollar.svg" alt="">
+    <input type="text" class="amount" name="bill">
+  </div>
+
+  <!-- Select Tip Percentage Input-->
+  <label for="percentage">Select Tip %</label>
+  <div class="percentage">
+    <button type="button">5%</button>
+    <button type="button">10%</button>
+    <button type="button">15%</button>
+    <button type="button">25%</button>
+    <button type="button">50%</button>
+    <input type="text" placeholder="Custom">
+  </div>
+
+  <!-- Number of Persons Input -->
+  <label for="people">Number of People</label>
+  <!-- Error message when entered zero -->
+  <label for="error">Can't be zero</label>     
+  <div class="input">
+    <img src="images/icon-person.svg" alt="">
+    <input type="text" class="amount" name="people">
+  </div>
+</form>
+  </div>
+
+  <!-- Amounts per person Section -->
+  <div class="bill-amount">
+
+    <!-- Total Splitted tip  -->
+<div class="amount">
+  <p><span>Tip Amount</span><span>/ person</span></p>
+  <div class="tip-amount">
+    <img src="images/icon-dollar.svg" alt="">
+    <input type="text" value="0.00" name="tip-amount">
+  </div>
+</div>
+
+<!-- Total Splitted Amount Per person -->
+<div class="amount">
+  <p><span>Total</span><span>/ person</span></p>
+  <div class="tip-amount">
+    <img src="images/icon-dollar.svg" alt="">
+    <input type="text" value="0.00" name="total">
+  </div>
+</div>
+
+<!-- Reset Button -->
+<button id="reset">RESET</button>
+</div>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
